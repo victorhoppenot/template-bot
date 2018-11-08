@@ -8,7 +8,6 @@ const config = require("./config.json");
 
 client.config = config;
 
-client.SQLTok = process.env.SQL_TOKEN;
 client.commands = new Enmap();
 
 fs.readdir("./commands/", (err, files) => {
