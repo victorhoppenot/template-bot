@@ -39,7 +39,7 @@ client.on("message", (message) => {
   const command = args.shift().toLowerCase();
   const cmd = client.commands.get(command);
  
-  cmd.run(client, message, args, connection);
+  cmd.run(client, message, args);
 });
 
 client.login(process.env.BOT_TOKEN);
