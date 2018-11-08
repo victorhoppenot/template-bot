@@ -5,8 +5,8 @@
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
-    "postinstall": "npm i mysql && npm i fs && npm i enmap",
-    "_comment": "//mysql for database; fs for file system; enmap for enmaps" 
+    "postinstall": "npm i fs && npm i enmap",
+    "_comment": "//fs for file system; enmap for enmaps" 
   },
   "dependencies": {
     "discord.js": "11.1.0",
