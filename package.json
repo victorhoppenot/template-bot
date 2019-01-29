@@ -5,7 +5,7 @@
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
-    "postinstall": "npm i fs",
+    "postinstall": "npm i fs && npm i enmap",
     "_comment": "//fs for file system" 
   },
   "dependencies": {
