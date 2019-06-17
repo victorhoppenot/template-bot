@@ -36,8 +36,13 @@ client.on("message", (message) => {
   const args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   const cmd = client.commands.get(command);
- 
-  cmd.run(client, message, args);
+  try{
+    cmd.run(client, message, args);
+  }catch(e){
+    if(client.config.debug == true){
+      console.log(console.log(e.message));
+    }
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
