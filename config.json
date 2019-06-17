@@ -1,4 +1,5 @@
 {
   "prefix" : "&",
-  "channel" : "bots"
+  "channel" : "bots",
+  "debug" : true
 }
